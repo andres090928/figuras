@@ -1,0 +1,202 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#ejemplo{
+    width:  100%;
+    min-height: 100vh;
+    background: url(../img/fondo1.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+#ejemplo .fila{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 70vh;
+    padding-top: 120px;
+}
+
+#ejemplo .col-izq, .col-der{
+    width: 50%;
+    text-align: center;
+    border: 1px solid #fff;
+    background: #d49cf03d;
+    padding: 40px;
+    min-height: 600px;
+}
+
+h2{
+    font-size: 40px;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+button{
+    background: #fff;
+    color: #000;
+    padding: 10px 10px;
+    margin: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    transform: scale(0.8);
+    background: #000;
+    color: #fff;
+}
+
+#figura{
+    width: 210px;
+    height: 210px;
+    background: #fff;
+    margin: 100px auto;
+    transition: 1s;
+}
+
+#figura.circulo{
+    transform:scale(1.5) rotate(360deg);
+    border-radius: 50%;
+    background: #8ab0f2ec;
+}
+
+#figura.rectangulo{
+    height: 280px;
+    background: #f5bade;
+}
+
+#figura.Right{
+    transform: translateX(200px);
+    
+}
+#figura.Left{
+    transform: translateX(-200px);
+    
+}
+#figura.luna{
+      background-color: transparent;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      box-shadow: 50px 25px #000;
+}
+#figura.estrella{
+    display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 150px solid transparent;
+      border-right: 150px solid transparent;
+      border-bottom: 150px solid gold;
+      position: relative;
+      top: 6px;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+#figura.triangulo{
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 400px solid aqua;
+}
+#figura.gif{
+    background: url(../img/gif.gif);
+    background-size: contain;
+}
+#figura.degradado{
+     width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, yellow, white);
+}
+#figura.top{
+    transform: translateY(-200px);
+}
+#figura.Bottom{
+    transform: translateY(150px);
+}
+#figura.Diagonal{
+    transform: translate(200px, 200px);
+}
+#ejemplo.fondo{
+    background-image: url(../img/fondo2.jpg) !important;
+    background-size: cover;
+    background-position: center;
+}
+#Panel-lateral{
+
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: -450px;
+    top:0;
+    z-index: 9;
+    background-color: black;
+    transition: 1s;
+}
+#Panel-lateral.active{
+    left: 0;
+
+
+}
+#Panel-superior{
+
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top:-460px;
+    z-index: 9;
+    background-color: black;
+    transition: 1s;
+    text-align: center;
+}
+#Panel-superior.active{
+    top: 0;
+
+}
+#Panel-lateral h2{
+    color: #fff;
+    font-size: 40px;
+    padding: 40px 30px;
+
+}
+#Panel-lateral ul{
+    width: 80%;
+    margin: 20px auto;   
+    text-align:center ;
+}
+
+#Panel-lateral ul a{
+    display: block;
+    padding: 20px;
+    background: #003cff;
+    color: #fff;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 22px;
+    transition: .5s;
+}
+
+#Panel-lateral ul a:hover{
+border-radius: 50px;
+}
+#Panel-superior h2{
+    color: #fff;
+    font-size: 40px;
+    padding: 40px 30px;
+}
+
+
+
+
+

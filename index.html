@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body id="Color">
+    
+    <section id="ejemplo">
+        <div id="Panel-lateral">
+            <h2>Menu principal</h2>
+            <ul>
+                <a href="#">Inicio</a>
+                <a href="#">Perfil</a>
+                <a href="#">Estudios</a>
+                <a href="#">Hobbis</a>
+                <a href="#">Contacto</a>
+            </ul>
+        </div>
+        <div id="Panel-superior">
+            <h2>VIDEO</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CDl--uAoYnc?si=FIS_ob_8WFiR4RXO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>  
+        <div class="fila">
+            <div class="col-izq">
+                <h2>INTERACCIONES</h2>
+                <button onclick="circulo()">CIRCULO</button>
+                <button onclick="rectangulo()">RECTANGULO</button>
+                <button onclick="degradado()">DEGRADADO</button>
+                <button onclick="gif()">GIF</button>
+                <button onclick="luna()">LUNA</button>
+                <button onclick="estrella()">ESTRELLA</button>
+                <button onclick="triangulo()">TRIANGULO</button>
+                <button onclick="moveTop()">TOP</button>
+                <button onclick="moveBottom()">BOTTOM</button>
+                <button onclick="moveLeft()">LEFT</button>
+                <button onclick="moveRight()">RIGHT</button>
+                <button onclick="Diagonal">DIAGONAL</button>
+                <button onclick="PanelLateral()" >PANEL LATERAL</button>
+                <button onclick="Panelsuperior()">PANEL SUPERIOR</button>
+                <button onclick="fondo()">BACKGROUND GENERAL</button>
+                <button onclick="fondo2()">BG INGRESADO POR EL USUARIO</button>
+            </div>
+
+            <div class="col-der">
+                <h2 id="figura2">FIGURA</h2>
+                <div id="figura" class=""></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
